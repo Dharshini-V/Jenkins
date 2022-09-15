@@ -2,7 +2,9 @@
 <api context="/JenkinsAPI" name="JenkinsAPI" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET">
         <inSequence>
-            <log level="custom"/>
+            <log level="custom">
+                <property name="Message" value="This is JenkinsAPI log"/>
+            </log>
         </inSequence>
         <outSequence/>
         <faultSequence/>

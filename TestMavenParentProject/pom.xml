@@ -13,9 +13,9 @@
     <module>Composite_Project</module>
   </modules>
   <scm>
-    <connection>scm:git:https://github.com/username/repository.git</connection>
-    <developerConnection>scm:git:https://github.com/username/repository.git</developerConnection>
-    <url>https://github.com/username/repository.git</url>
+    <connection>scm:git:https://github.com/Dharshini-V/Jenkins.git</connection>
+    <developerConnection>scm:git:https://github.com/Dharshini-V/Jenkins.git</developerConnection>
+    <url>https://github.com/Dharshini-V/Jenkins.git</url>
   </scm>
   <distributionManagement>
     <repository>
