@@ -26,13 +26,27 @@
   </distributionManagement>
   <properties>
     <project.scm.id>integration-project</project.scm.id>
+    <maven.car.deploy.skip>false</maven.car.deploy.skip>
+    <maven.deploy.skip>true</maven.deploy.skip>
   </properties>
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <version>3.0.0-M1</version>
-        <configuration />
+        <configuration>
+          <carbonServers>
+            <CarbonServer>
+              <trustStorePath>E:/Servers/wso2_servers/wso2EI_servers/wso2ei-6.6.0-9447/repository/resources/security/wso2carbon.jks</trustStorePath>
+              <trustStorePassword>wso2carbon</trustStorePassword>
+              <trustStoreType>JKS</trustStoreType>
+              <serverUrl>https://localhost:9447</serverUrl>
+              <userName>admin</userName>
+              <password>admind</password>
+              <operation>deploy</operation>
+            </CarbonServer>
+          </carbonServers>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<api context="/JenkinsAPI" name="JenkinsAPI" xmlns="http://ws.apache.org/ns/synapse">
+<api context="/logapinew" name="LogAPINew" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET">
         <inSequence>
             <log level="custom">
-                <property name="---New--Start--Message--Log--" value="This is JenkinsAPI log"/>
+                <property name="--Start Message Log--" value="This is JenkinsAPI log"/>
             </log>
         </inSequence>
         <outSequence/>
