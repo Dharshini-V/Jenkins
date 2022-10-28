@@ -3,8 +3,14 @@
     <resource methods="GET">
         <inSequence>
             <log level="custom">
-                <property name="--Flow--Started--" value="This is JenkinsAPI log"/>
+                <property name="***///--Flow--Started--///***" value="This is JenkinsAPI log"/>
             </log>
+            <payloadFactory media-type="xml">
+                <format>
+                    <Message>Flow Success</Message>
+                </format>
+                <args/>
+            </payloadFactory>
         </inSequence>
         <outSequence/>
         <faultSequence/>
